@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OpenVerse Campus Helper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>OpenVerse Campus Helper</h1>
+    <p>Ask any campus related query and get AI powered answers.</p>
+
+    <form id="question-form">
+      <label for="question">Your question</label>
+      <textarea id="question" required placeholder="Example: What is the exam pattern for Sem 5 BBA?"></textarea>
+      <button type="submit" id="ask-btn">Ask AI</button>
+    </form>
+
+    <section id="answer-section" class="card hidden">
+      <h2>AI Answer</h2>
+      <p id="answer-text"></p>
+      <button id="save-faq-btn">Save to FAQ</button>
+      <button id="save-google-btn">Save to Google</button>
+
+    </section>
+
+
+    <section id="faq-section">
+      <h2>Campus FAQ</h2>
+      <ul id="faq-list"></ul>
+    </section>
+
+    <section id="sheet-section">
+      <h2>Public FAQ Sheet</h2>
+      <!-- You will embed Google Sheet iframe here later -->
+      <iframe id="faq-sheet" src="" width="100%" height="300" loading="lazy"></iframe>
+    </section>
+
+    <section id="docs-section">
+      <h2>Important Documents</h2>
+      <ul>
+        <li><a id="syllabus-link" href="#" target="_blank">View BBA Syllabus (Google Drive)</a></li>
+      </ul>
+    </section>
+
+    <section id="campus-map" class="card">
+  <h2>Campus Location</h2>
+  <p>Find Bharati Vidyapeeth DMS, Kharghar on Google Maps:</p>
+  <div class="map-wrapper">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.743128776081!2d73.05629587609653!3d19.031037453380783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3004632ef29%3A0xe747324bfb1a6836!2sBharati%20Vidyapeeth%20Department%20of%20Management%20Studies%20(Off%20Campus)!5e0!3m2!1sen!2sin!4v1765267101832!5m2!1sen!2sin"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+
+    <script type="module" src="script.js"></script>
+  </main>
+</body>
+</html>

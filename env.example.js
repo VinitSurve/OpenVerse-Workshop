@@ -1,0 +1,26 @@
+// env.example.js - Environment configuration template
+// Copy this file to env.js and fill in your actual values
+
+export const ENV = {
+  // Firebase Configuration
+  FIREBASE_API_KEY: "your_firebase_api_key_here",
+  FIREBASE_AUTH_DOMAIN: "your_project_id.firebaseapp.com",
+  FIREBASE_PROJECT_ID: "your_project_id",
+  FIREBASE_STORAGE_BUCKET: "your_project_id.firebasestorage.app",
+  FIREBASE_MESSAGING_SENDER_ID: "your_sender_id",
+  FIREBASE_APP_ID: "your_app_id",
+  FIREBASE_MEASUREMENT_ID: "your_measurement_id",
+
+  // Gemini API Configuration
+  GEMINI_API_KEY: "your_gemini_api_key_here",
+  GEMINI_MODEL: "gemini-2.5-flash",
+
+  // Google Sheets Configuration
+  GOOGLE_SHEET_PUB_URL: "your_google_sheet_publish_url_here",
+
+  // Google Apps Script Configuration
+  APPS_SCRIPT_URL: "your_apps_script_web_app_url_here",
+
+  // Google Drive Configuration (Optional)
+  GOOGLE_DRIVE_SYLLABUS_LINK: "your_google_drive_link_here"
+};
